@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calendar Events View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="CalendarEventsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z7e-k4-53F">
+                                <rect key="frame" x="0.0" y="16.5" width="375" height="656"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vax-mS-cPo" userLabel="TitleView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iaE-cn-xob">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skf-HQ-4RN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="44"/>
+                                                        <state key="normal" title=" " image="menu-25x25"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz0-ek-sPk">
+                                                        <rect key="frame" x="53.5" y="0.0" width="53.5" height="44"/>
+                                                        <state key="normal" title=" "/>
+                                                        <connections>
+                                                            <action selector="onAlternateStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0o-Ql-6xr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWO-pw-aM5">
+                                                        <rect key="frame" x="107" y="0.0" width="53.5" height="44"/>
+                                                        <state key="normal" title=" "/>
+                                                        <connections>
+                                                            <action selector="onAlternateStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K3v-zA-q9D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW4-Ca-FOm">
+                                                        <rect key="frame" x="160.5" y="0.0" width="54" height="44"/>
+                                                        <state key="normal" title=" "/>
+                                                        <connections>
+                                                            <action selector="onAlternateStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgM-hb-HCs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQa-pt-ecD">
+                                                        <rect key="frame" x="214.5" y="0.0" width="53.5" height="44"/>
+                                                        <state key="normal" title=" "/>
+                                                        <connections>
+                                                            <action selector="onAlternateStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9nA-bd-VcQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHh-3i-p0C">
+                                                        <rect key="frame" x="268" y="0.0" width="53.5" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qj-Nu-L2f">
+                                                                <rect key="frame" x="0.0" y="3" width="53.5" height="44"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho1-qb-cxR">
+                                                                <rect key="frame" x="0.0" y="-0.5" width="53.5" height="44"/>
+                                                                <state key="normal" image="calendar-25x25">
+                                                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="onSnapToCurrentDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bce-f9-af9"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ho1-qb-cxR" firstAttribute="width" secondItem="sHh-3i-p0C" secondAttribute="width" id="3R8-6s-785"/>
+                                                            <constraint firstItem="2Qj-Nu-L2f" firstAttribute="centerY" secondItem="sHh-3i-p0C" secondAttribute="centerY" constant="3" id="Keb-DR-YVv"/>
+                                                            <constraint firstItem="ho1-qb-cxR" firstAttribute="centerY" secondItem="sHh-3i-p0C" secondAttribute="centerY" id="NMi-7d-XAb"/>
+                                                            <constraint firstItem="2Qj-Nu-L2f" firstAttribute="height" secondItem="sHh-3i-p0C" secondAttribute="height" id="Okt-VH-5oB"/>
+                                                            <constraint firstItem="2Qj-Nu-L2f" firstAttribute="width" secondItem="sHh-3i-p0C" secondAttribute="width" id="UVu-g5-5lM"/>
+                                                            <constraint firstItem="ho1-qb-cxR" firstAttribute="centerX" secondItem="sHh-3i-p0C" secondAttribute="centerX" id="lcv-Td-8L7"/>
+                                                            <constraint firstItem="ho1-qb-cxR" firstAttribute="height" secondItem="sHh-3i-p0C" secondAttribute="height" id="qoT-e1-AMR"/>
+                                                            <constraint firstItem="2Qj-Nu-L2f" firstAttribute="centerX" secondItem="sHh-3i-p0C" secondAttribute="centerX" id="xyq-8l-ESW"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgT-Ce-kJg">
+                                                        <rect key="frame" x="321.5" y="0.0" width="53.5" height="44"/>
+                                                        <state key="normal" title=" " image="add-25x25"/>
+                                                        <connections>
+                                                            <action selector="onCreateNewEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubm-LV-hyu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqO-hd-2Il">
+                                                <rect key="frame" x="0.0" y="-0.5" width="375" height="44"/>
+                                                <color key="tintColor" red="0.0" green="0.47058823529411764" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" red="0.0" green="0.47058823529411764" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.47058823529411764" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="iaE-cn-xob" firstAttribute="centerY" secondItem="vax-mS-cPo" secondAttribute="centerY" id="GXI-dJ-2bh"/>
+                                            <constraint firstItem="uqO-hd-2Il" firstAttribute="centerX" secondItem="vax-mS-cPo" secondAttribute="centerX" id="IwI-MF-iLW"/>
+                                            <constraint firstItem="uqO-hd-2Il" firstAttribute="height" secondItem="vax-mS-cPo" secondAttribute="height" id="Pnv-zR-JUv"/>
+                                            <constraint firstItem="uqO-hd-2Il" firstAttribute="centerY" secondItem="vax-mS-cPo" secondAttribute="centerY" id="S95-HR-p9o"/>
+                                            <constraint firstAttribute="height" constant="44" id="W0p-dv-UMg"/>
+                                            <constraint firstItem="iaE-cn-xob" firstAttribute="centerX" secondItem="vax-mS-cPo" secondAttribute="centerX" id="YNw-t9-o4I"/>
+                                            <constraint firstItem="iaE-cn-xob" firstAttribute="width" secondItem="vax-mS-cPo" secondAttribute="width" id="azf-rQ-tw7"/>
+                                            <constraint firstItem="uqO-hd-2Il" firstAttribute="width" secondItem="vax-mS-cPo" secondAttribute="width" id="iJh-Er-xnn"/>
+                                            <constraint firstItem="iaE-cn-xob" firstAttribute="height" secondItem="vax-mS-cPo" secondAttribute="height" id="uHC-Rr-k4p"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqh-vF-KiW" customClass="CalendarHeaderView">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="26"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.0" green="0.47058823529411764" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="kbT-Zb-aDa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CL-w2-WBv" customClass="CalendarView">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="528"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="528" id="CLr-ai-XWl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRw-Mq-XXS" customClass="AgendaView">
+                                        <rect key="frame" x="0.0" y="598" width="375" height="58"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z7e-k4-53F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="11" id="1Dy-Co-k79"/>
+                            <constraint firstItem="Z7e-k4-53F" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-11" id="4Ql-aY-39j"/>
+                            <constraint firstItem="Z7e-k4-53F" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="6mD-LE-MhD"/>
+                            <constraint firstItem="Z7e-k4-53F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tuP-ae-vIw"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="agendaView" destination="RRw-Mq-XXS" id="D3o-Xu-eUA"/>
+                        <outlet property="calendarHeightConstraint" destination="CLr-ai-XWl" id="xHx-1Z-hyU"/>
+                        <outlet property="calendarView" destination="2CL-w2-WBv" id="6AI-4F-ByT"/>
+                        <outlet property="currentDayLabel" destination="2Qj-Nu-L2f" id="KNT-bO-bM1"/>
+                        <outlet property="selectedDateLabel" destination="uqO-hd-2Il" id="dGc-Gx-3zL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2949.5999999999999" y="194.75262368815595"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add-25x25" width="25" height="25"/>
+        <image name="calendar-25x25" width="23" height="23"/>
+        <image name="menu-25x25" width="25" height="25"/>
+    </resources>
+</document>
